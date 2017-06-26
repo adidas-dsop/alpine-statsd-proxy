@@ -5,7 +5,7 @@ RUN apk --update add alpine-sdk && \
   apk add automake
 
 RUN cd /tmp && \
-  git clone https://github.com/adidas-dsop/statsd-proxy.git &&
+  git clone https://github.com/adidas-dsop/statsd-proxy.git && \
   cd statsd-proxy && \
   ./autogen.sh && \
   ./configure && \
